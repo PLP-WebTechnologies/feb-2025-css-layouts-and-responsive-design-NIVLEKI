@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Assignment Responsive Page</title>
+    <style>
+        /* 🌟 Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* 🔹 Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        /* 🔹 Main Content Layout */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* 🔹 Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>Kariuki Kelvin Wachira</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box">
+            <img src="https://academy.powerlearnprojectafrica.org/assets/logo.CAPAuQa5.png" alt="Sample Image">
+            <p>Week 1</p>
+        </div>
+        <div class="box"><img src="https://academy.powerlearnprojectafrica.org/assets/logo.CAPAuQa5.png" alt="Sample Image">
+            <p>Week 2</p>
+        </div>
+        <div class="box"><img src="https://academy.powerlearnprojectafrica.org/assets/logo.CAPAuQa5.png" alt="Sample Image">
+            <p>Week 3</p></div>
+        <div class="box"><img src="https://academy.powerlearnprojectafrica.org/assets/logo.CAPAuQa5.png" alt="Sample Image">
+            <p>Week 4</p></div>
+        <div class="box"><img src="https://academy.powerlearnprojectafrica.org/assets/logo.CAPAuQa5.png" alt="Sample Image">
+            <p>Week 5</p></div>
+        <div class="box"><img src="https://academy.powerlearnprojectafrica.org/assets/logo.CAPAuQa5.png" alt="Sample Image">
+            <p>Week 6</p></div>
+    </div>
+
+</body>
+</html>
